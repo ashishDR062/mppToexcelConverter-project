@@ -22,11 +22,9 @@ const convertMppToExcel = (mppFilePath, outputDirectory) => {
 
     const command = `java -cp ${path_to_mpxj_jar} ${javaFile} ${mppFilePath} ${outputFilePath}`;
 
-    console.log("command:", command);
-
     exec(command, (error, stdout, stderr) => {
       if (error) {
-        console.error(error.message);
+        console.error(error);
         return reject();
       }
       resolve(outputFilePath);

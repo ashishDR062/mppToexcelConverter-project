@@ -12,12 +12,12 @@ app.use("/files", fileRoutes);
 const workspaceID = "00000000-0000-0000-0000-000000000000"; // Power BI Workspace ID
 const datasetName = "Dataset Name"; // Dataset name in Power BI
 
-// // Schedule conversion at 2 AM every day
-// schedule.scheduleJob("0 2 * * *", () => {
-//   console.log("Scheduled Conversion Triggered");
-//   const mppFilePath = "./files/mppFiles/Master Sample (1).mpp"; // Example .MPP file path
-//   fileController.handleFileConversion(mppFilePath, workspaceID, datasetName);
-// });
+// Schedule conversion at 2 AM every day
+schedule.scheduleJob("0 2 * * *", () => {
+  console.log("Scheduled Conversion Triggered");
+  const mppFilePath = "./files/mppFiles/MasterSample.mpp"; // Example .MPP file path
+  fileController.handleFileConversion(mppFilePath);
+});
 
 const mppFilePath = "./files/mppFiles/"; // Example .MPP file path
 fileController.handleFileConversion(mppFilePath);
