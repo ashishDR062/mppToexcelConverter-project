@@ -19,7 +19,7 @@ const datasetName = "Dataset Name"; // Dataset name in Power BI
 //   fileController.handleFileConversion(mppFilePath, workspaceID, datasetName);
 // });
 
-const mppFilePath = "./files/mppFiles/MasterSample.mpp"; // Example .MPP file path
+const mppFilePath = "./files/mppFiles/"; // Example .MPP file path
 fileController.handleFileConversion(mppFilePath);
 
 const PORT = process.env.PORT || 3000;

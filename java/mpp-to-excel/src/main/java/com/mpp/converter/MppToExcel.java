@@ -1,9 +1,14 @@
-package com.mpp.converter;
+// package main.java.com.mpp.converter;
 
 import net.sf.mpxj.ProjectFile;
 import net.sf.mpxj.Task;
 import net.sf.mpxj.mpp.MPPReader;
-import org.apache.poi.ss.usermodel.*;
+// import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileOutputStream;
@@ -11,6 +16,7 @@ import java.io.IOException;
 
 public class MppToExcel {
     public static void main(String[] args) throws Exception {
+        System.out.println("Initiating to Convert Mpp File to Excel");
         if (args.length < 2) {
             System.out.println("Usage: java -jar mpp-to-excel.jar <input_mpp_file> <output_excel_file>");
             return;
