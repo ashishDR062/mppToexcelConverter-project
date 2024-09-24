@@ -9,11 +9,14 @@ app.use(express.json());
 const fileRoutes = require("./routes/FileRoutes");
 app.use("/files", fileRoutes);
 
+const workspaceID = "00000000-0000-0000-0000-000000000000"; // Power BI Workspace ID
+const datasetName = "Dataset Name"; // Dataset name in Power BI
+
 // Schedule conversion at 2 AM every day
 schedule.scheduleJob("0 2 * * *", () => {
   console.log("Scheduled Conversion Triggered");
-  const mppFilePath = "./uploads/input.mpp"; // Example .MPP file path
-  fileController.handleFileConversion(mppFilePath);
+  const mppFilePath = "./files/mppFiles/Master Sample (1).mpp"; // Example .MPP file path
+  fileController.handleFileConversion(mppFilePath, workspaceID, datasetName);
 });
 
 const PORT = process.env.PORT || 3000;

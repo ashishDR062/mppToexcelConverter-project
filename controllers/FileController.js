@@ -46,7 +46,7 @@ const compressFile = (inputFilePath, outputFilePath) => {
 
 // Example: Convert .MPP and compress the result
 // Handle file conversion and Power BI upload
-const handleFileConversion = async (mppFilePath) => {
+const handleFileConversion = async (mppFilePath, workspaceID, datasetName) => {
   try {
     const outputDirectory = createDynamicDirectory("excel");
     const outputFile = await convertMppToExcel(mppFilePath, outputDirectory);
@@ -56,9 +56,9 @@ const handleFileConversion = async (mppFilePath) => {
     compressFile(outputFile, compressedPath);
 
     // After successful conversion, upload to Power BI
-    const workspaceId = "your-workspace-id"; // Power BI Workspace ID
-    const datasetName = "Converted Dataset"; // Dataset name in Power BI
-    await uploadFileToPowerBI(workspaceId, datasetName, outputFile);
+    const workspace_id = workspaceID; // Power BI Workspace ID
+    const dataset_name = datasetName; // Dataset name in Power BI
+    await uploadFileToPowerBI(workspace_id, dataset_name, outputFile);
 
     console.log("File uploaded to Power BI successfully.");
   } catch (error) {

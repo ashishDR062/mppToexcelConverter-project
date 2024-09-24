@@ -15,6 +15,20 @@ const uploadFileToPowerBI = async (workspaceId, datasetName, filePath) => {
     // Step 3: Read the file you want to upload
     const fileContent = fs.readFileSync(filePath);
 
+    /* Optional API Request configuration */
+
+    const options = {
+      method: "POST",
+      url: `https://api.powerbi.com/v1.0/myorg/groups/${groupId}/datasets`,
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: datasetName,
+      }),
+    };
+
     // Step 4: Send POST request to upload the file
     const response = await axios.post(url, fileContent, {
       headers: {
