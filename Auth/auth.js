@@ -1,4 +1,4 @@
-const msal = require("@azure/msal-node");
+// const msal = require("@azure/msal-node");
 
 // Azure AD OAuth2 configuration
 const config = {
@@ -13,13 +13,13 @@ const config = {
         console.log(message);
       },
       piiLoggingEnabled: false,
-      logLevel: msal.LogLevel.Verbose,
+      // logLevel: msal.LogLevel.Verbose,
     },
   },
 };
 
 // Create MSAL ConfidentialClientApplication
-const pca = new msal.ConfidentialClientApplication(config);
+// const pca = new msal.ConfidentialClientApplication(config);
 
 // Function to get access token
 const getAccessToken = async () => {

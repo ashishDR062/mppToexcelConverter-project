@@ -12,7 +12,7 @@
         <dependency>
             <groupId>net.sf.mpxj</groupId>
             <artifactId>mpxj</artifactId>
-            <version>10.5.0</version> <!-- Make sure to check the latest version -->
+            <version>13.4.0</version> <!-- Make sure to check the latest version -->
         </dependency>
 
         <!-- Apache POI Library for writing Excel files -->
@@ -22,12 +22,13 @@
             <version>5.2.3</version>
         </dependency>
 
-        <!-- Other necessary libraries (for handling XML, ZIP, etc.) -->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-compress</artifactId>
-            <version>1.21</version>
-        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-compress -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-compress</artifactId>
+    <version>1.27.1</version>
+</dependency>
+
     </dependencies>
 
     <build>
