@@ -1,0 +1,6 @@
+Folder Name: views/
+Description: This folder is intended for frontend views if needed (optional for this project). It can be used to render file conversion results in a web interface or provide user interfaces.
+
+Example Files:
+- index.html: (Optional) Displays file conversion results.
+- status.html: (Optional) Shows the status of scheduled tasks or ongoing conversions.

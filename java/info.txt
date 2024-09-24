@@ -1,0 +1,16 @@
+Folder Name: java/
+Description: This folder contains the Java code used for converting .MPP files to .xlsx (Excel).
+
+Files:
+- MppToExcel.java:
+    - Java class responsible for reading .MPP files and converting them into .xlsx format.
+    - Uses MPXJ for .MPP file reading and Apache POI for Excel file creation.
+
+Required Dependencies:
+- MPXJ: For parsing .MPP files.
+- Apache POI: For generating Excel files.
+
+How to Compile:
+- Ensure Java is installed.
+- Add required dependencies (MPXJ, POI) and compile the Java file.
+- Command: `javac MppToExcel.java`

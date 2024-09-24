@@ -1,0 +1,10 @@
+Folder Name: files/
+Description: This folder stores all files uploaded for conversion and the resulting converted files. It is divided into subfolders based on file types.
+
+Subfolders:
+- excel/: Stores the Excel (.xlsx) files generated after converting .MPP files.
+- csv/: (Optional) Stores CSV files if conversion to CSV is supported in the future.
+- compressed/: Stores compressed (ZIP) versions of the converted files.
+
+Dynamic Folder Creation:
+- New folders are created dynamically based on the type of file being processed (e.g., 'excel', 'csv').

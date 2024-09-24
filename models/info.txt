@@ -1,0 +1,8 @@
+Folder Name: models/
+Description: This folder is intended to store database models, though it's optional in the current setup. It can be extended to include file metadata storage (e.g., MongoDB, MySQL) if needed.
+
+Files:
+- FileModel.js (Optional): Model for storing file-related metadata in the database.
+
+Key Purpose:
+- Define database schemas and logic for persisting data related to converted files (file paths, timestamps, etc.).

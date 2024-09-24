@@ -1,0 +1,14 @@
+Folder Name: controllers/
+Description: This folder contains the main logic for handling file conversion, compression, and scheduling tasks.
+
+Files:
+- FileController.js: 
+    - Handles the conversion of .MPP files to .xlsx using Java.
+    - Supports file compression.
+    - Provides functions for manual and scheduled conversion.
+
+Key Functions:
+- convertMppToExcel(): Invokes Java code to perform the conversion.
+- compressFile(): Compresses files using gzip.
+- createDynamicDirectory(): Dynamically creates directories based on file types.
+- handleFileConversion(): Central function to convert and compress .MPP files.

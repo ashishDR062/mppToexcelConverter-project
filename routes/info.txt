@@ -1,0 +1,10 @@
+Folder Name: routes/
+Description: This folder contains the API routes that allow manual triggering of the file conversion process.
+
+Files:
+- FileRoutes.js:
+    - Defines the API endpoints for triggering .MPP to .xlsx conversion manually.
+    - Example endpoint: POST /files/convert
+
+Key API Endpoints:
+- POST /files/convert: Accepts a file path in the request body and triggers the conversion.

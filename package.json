@@ -1,0 +1,21 @@
+{
+  "name": "mpptoexcelconverter-project",
+  "version": "1.0.0",
+  "description": "Coverts mpp file to excel with automation, with java to convert he file and I/O operations with node express.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "child_process": "^1.0.2",
+    "express": "^4.21.0",
+    "multer": "^1.4.5-lts.1",
+    "node-schedule": "^2.1.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
